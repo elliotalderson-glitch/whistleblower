@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sougata cheated Piya</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f5f5f5; padding: 10px; }
+        h1 { margin-bottom: 20px; font-size: 1.8em; }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%; /* Mobile-friendly width */
+            max-width: 1200px; /* Prevents stretching */
+            height: auto; /* Maintains aspect ratio */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Lazy loading effect */
+        .gallery img[data-src] {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .gallery img.loaded {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>To, PIYA BISWAS</h1>
+    <span style="color: red;"><h3>**এই বার্তাটি মনোযোগ দিয়ে পড় এবং সমস্ত চ্যাটের স্ক্রিনশট পড়া শেষ না হওয়া পর্যন্ত সৌগতকে এ সম্পর্কে কিছুই বলো না।**</h3></span>
+
+দিনের পর দিন, সৌগত তোমার সঙ্গে প্রতারণা করে চলেছে। সে তোমাকে যে প্রতিশ্রুতিগুলো দিয়েছে, যে মিষ্টি কথাগুলো বলেছে, যে ভালোবাসার বহিঃপ্রকাশ করেছে, এবং যার প্রতিটি কথায় তুমি বিশ্বাস করেছ—সবই ছিল তার সাজানো ফাঁদ।
+<br>
+<h3>এই চ্যাটগুলো একটি মেয়ে, <a href="https://www.instagram.com/anweshiacharya/">Anweshi Acharya</a>
+ এবং সৌগতের মধ্যে হয়েছে। সৌগত তোমার অজান্তে তার প্রোফাইল তোমার অ্যাকাউন্ট থেকে ব্লক করে দিয়েছে।</h3>
+এই চ্যাটগুলো পড়ার পর, আমি বিশ্বাস করি তুমি তোমার প্রেমিকের আসল রূপ দেখতে পাবে—যে রূপ সে মুখোশের আড়ালে লুকিয়ে রেখেছে।
+
+<h2>শক্ত হও!</h2>
+<h2>BREAK UP KORO</h2>
+<hr>
+<br>
+<br>
+    <div class="gallery">
+        <img data-src="images/screenshot1.jpg" alt="Screenshot 1">
+        <img data-src="images/screenshot2.jpg" alt="Screenshot 2">
+        <img data-src="images/screenshot3.jpg" alt="Screenshot 3">
+        <img data-src="images/screenshot4.jpg" alt="Screenshot 4">
+        <img data-src="images/screenshot5.jpg" alt="Screenshot 5">
+        <img data-src="images/screenshot6.jpg" alt="Screenshot 6">
+        <img data-src="images/screenshot7.jpg" alt="Screenshot 7">
+        <img data-src="images/screenshot8.jpg" alt="Screenshot 8">
+        <img data-src="images/screenshot9.jpg" alt="Screenshot 9">
+        <img data-src="images/screenshot10.jpg" alt="Screenshot 10">
+        <img data-src="images/screenshot11.jpg" alt="Screenshot 11">
+        <img data-src="images/screenshot12.jpg" alt="Screenshot 12">
+        <img data-src="images/screenshot13.jpg" alt="Screenshot 13">
+        <img data-src="images/screenshot14.jpg" alt="Screenshot 14">
+        <img data-src="images/screenshot15.jpg" alt="Screenshot 15">
+    </div>
+
+    <script>
+        // Lazy loading images
+        document.addEventListener("DOMContentLoaded", function () {
+            const lazyImages = document.querySelectorAll("img[data-src]");
+            lazyImages.forEach(img => {
+                img.src = img.getAttribute("data-src");
+                img.classList.add("loaded");
+            });
+        });
+    </script>
+</body>
+</html>
+
